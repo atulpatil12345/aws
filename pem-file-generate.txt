@@ -1,7 +1,7 @@
-#how to generate the pem file if we lost, take the console access do below things
+#how to generate the pem file if we lost, take the console access and  do below things
 1) if id_rsa.pub or id_rsa is not present then run below command on both the server (local machine & aws ec2 instance)
 ssh-keygen
-2) copy the id_rsa.pub file to aws ec2 instance and phaste in authorized.key file
+2) copy the id_rsa.pub file from local machine  to aws ec2 instance and phaste in authorized.key file
 cp -rvf id_rsa.pub authorized.key
 
 3) copy the id_rsa file on aws ec2 which you created as pem file and take the access
